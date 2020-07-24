@@ -1,9 +1,9 @@
 " File: autoload/w3m/search_engines/python.vim
-" Last Modified: 2012.03.25
-" Version: 1.0.0
+" Last Modified: 2020.07.25
+" Version: 1.0.1
 " Author: yuratomo (twitter @yusetomo)
 
-let s:engine = w3m#search_engine#Init('python', 'http://www.google.com/search?sitesearch=www.python.com/doc/&q=%s')
+let s:engine = w3m#search_engine#Init('python', 'https://www.google.com/search?sitesearch=https://docs.python.org/3&q=%s')
 
 function! s:engine.preproc()
   let s:user_agent_backup = g:user_agent
